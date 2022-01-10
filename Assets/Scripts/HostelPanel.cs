@@ -7,7 +7,7 @@ class HostelPanel : MonoBehaviour
     public void ClickingOn_ToSleep()
     {
         GameObject.Find("Tiredness").GetComponent<Text>().text = "100";
-        DateAndTime.TimeWork(8);
+        //DateAndTime.TimeWork(8);
     }
     public void ClickingOn_ToEat1()
     {

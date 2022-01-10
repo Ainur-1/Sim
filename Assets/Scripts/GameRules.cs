@@ -18,6 +18,11 @@ public class GameRules : MonoBehaviour
             return false;
         else return true;
     }
+    public static bool OnceTouched(GameObject gameObject)
+    {
+        if (gameObject.GetComponentInChildren<Text>().text == "Куплено") return false;
+        else return true;
+    }
     public static void EndOfGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
