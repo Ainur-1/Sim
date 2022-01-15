@@ -1,39 +1,62 @@
-using System;
+Ôªøusing System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ShopPanel : MonoBehaviour
 {
+    public string Product1Name;
+    public int Product1Cost;
+
+    public string Product2Name;
+    public int Product2Cost;
+
+    public string Product3Name;
+    public int Product3Cost;
+
+    public string Product4Name;
+    public int Product4Cost;
+
+    void Awake()
+    {
+        GameObject.Find("Product #1").GetComponentInChildren<Text>().text = GameObject.Find("Shop Panel").GetComponent<ShopPanel>().Product1Name + "  " +
+            Convert.ToString(GameObject.Find("Shop Panel").GetComponent<ShopPanel>().Product1Cost) + "‚ÇΩ";
+        GameObject.Find("Product #2").GetComponentInChildren<Text>().text = GameObject.Find("Shop Panel").GetComponent<ShopPanel>().Product2Name + "  " +
+            Convert.ToString(GameObject.Find("Shop Panel").GetComponent<ShopPanel>().Product2Cost) + "‚ÇΩ";
+        GameObject.Find("Product #3").GetComponentInChildren<Text>().text = GameObject.Find("Shop Panel").GetComponent<ShopPanel>().Product3Name + "  " +
+            Convert.ToString(GameObject.Find("Shop Panel").GetComponent<ShopPanel>().Product3Cost) + "‚ÇΩ";
+        GameObject.Find("Product #4").GetComponentInChildren<Text>().text = GameObject.Find("Shop Panel").GetComponent<ShopPanel>().Product4Name + "  " +
+            Convert.ToString(GameObject.Find("Shop Panel").GetComponent<ShopPanel>().Product4Cost) + "‚ÇΩ";
+    }
     public void ClickingOn_Product1()
     {
-        if (GameRules.NoDebt(200) & GameRules.OnceTouched(GameObject.Find("Product #1")))
+        if (GameRules.NoDebt(Product1Cost) & GameRules.OnceTouched(GameObject.Find("Product #1")))
         {
-            GameObject.Find("Money").GetComponent<Text>().text = '$' + Convert.ToString(Convert.ToInt32(GameObject.Find("Money").GetComponent<Text>().text.TrimStart('$')) - 200);
-            GameObject.Find("Product #1").GetComponentInChildren<Text>().text = " ÛÔÎÂÌÓ";
+            GameObject.Find("Money").GetComponent<Text>().text = Convert.ToString(Convert.ToInt32(GameObject.Find("Money").GetComponent<Text>().text.TrimEnd('‚ÇΩ')) - Product1Cost) + "‚ÇΩ";
+            GameObject.Find("Product #1").GetComponentInChildren<Text>().text = "–ö—É–ø–ª–µ–Ω–æ";
         }
     }
     public void ClickingOn_Product2()
     {
-        if (GameRules.NoDebt(500) & GameRules.OnceTouched(GameObject.Find("Product #2")))
+        if (GameRules.NoDebt(Product2Cost) & GameRules.OnceTouched(GameObject.Find("Product #2")))
         {
-            GameObject.Find("Money").GetComponent<Text>().text = '$' + Convert.ToString(Convert.ToInt32(GameObject.Find("Money").GetComponent<Text>().text.TrimStart('$')) - 500);
-            GameObject.Find("Product #2").GetComponentInChildren<Text>().text = " ÛÔÎÂÌÓ";
+            GameObject.Find("Money").GetComponent<Text>().text = Convert.ToString(Convert.ToInt32(GameObject.Find("Money").GetComponent<Text>().text.TrimEnd('‚ÇΩ')) - Product2Cost) + "‚ÇΩ";
+            GameObject.Find("Product #2").GetComponentInChildren<Text>().text = "–ö—É–ø–ª–µ–Ω–æ";
         }
     }
     public void ClickingOn_Product3()
     {
-        if (GameRules.NoDebt(1000) & GameRules.OnceTouched(GameObject.Find("Product #3")))
+        if (GameRules.NoDebt(Product3Cost) & GameRules.OnceTouched(GameObject.Find("Product #3")))
         {
-            GameObject.Find("Money").GetComponent<Text>().text = '$' + Convert.ToString(Convert.ToInt32(GameObject.Find("Money").GetComponent<Text>().text.TrimStart('$')) - 1000);
-            GameObject.Find("Product #3").GetComponentInChildren<Text>().text = " ÛÔÎÂÌÓ";
+            GameObject.Find("Money").GetComponent<Text>().text = Convert.ToString(Convert.ToInt32(GameObject.Find("Money").GetComponent<Text>().text.TrimEnd('‚ÇΩ')) - Product3Cost) + "‚ÇΩ";
+            GameObject.Find("Product #3").GetComponentInChildren<Text>().text = "–ö—É–ø–ª–µ–Ω–æ";
         }
     }
     public void ClickingOn_Product4()
     {
-        if (GameRules.NoDebt(10000) & GameRules.OnceTouched(GameObject.Find("Product #4")))
+        if (GameRules.NoDebt(Product4Cost) & GameRules.OnceTouched(GameObject.Find("Product #4")))
         {
-            GameObject.Find("Money").GetComponent<Text>().text = '$' + Convert.ToString(Convert.ToInt32(GameObject.Find("Money").GetComponent<Text>().text.TrimStart('$')) - 10000);
-            GameObject.Find("Product #4").GetComponentInChildren<Text>().text = " ÛÔÎÂÌÓ";
+            GameObject.Find("Money").GetComponent<Text>().text = Convert.ToString(Convert.ToInt32(GameObject.Find("Money").GetComponent<Text>().text.TrimEnd('‚ÇΩ')) - Product4Cost) + "‚ÇΩ";
+            GameObject.Find("Product #4").GetComponentInChildren<Text>().text = "–ö—É–ø–ª–µ–Ω–æ";
         }
     }
 }

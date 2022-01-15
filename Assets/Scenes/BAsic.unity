@@ -757,6 +757,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c8095d8876482438e2e66cb5970396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ToWork1Name: "\u0420\u0430\u0431\u043E\u0442\u0430 \u21161"
+  ToWork1Salary: 800
+  ToWork1EnergyLoss: 30
+  ToWork1SatietyLoss: 50
+  ToWork1Duration: 4
+  ToWork2Name: "\u0420\u0430\u0431\u043E\u0442\u0430 \u21162"
+  ToWork2Salary: 1000
+  ToWork2EnergyLoss: 60
+  ToWork2SatietyLoss: 80
+  ToWork2Duration: 8
+  ToWork3Name: "\u0420\u0430\u0431\u043E\u0442\u0430 \u21163"
+  ToWork3Salary: 2000
+  ToWork3EnergyLoss: 90
+  ToWork3SatietyLoss: 90
+  ToWork3Duration: 12
 --- !u!1 &274784121
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,7 +842,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $0
+  m_Text: "0\u20BD"
 --- !u!222 &274784124
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1137,8 +1152,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 350.0001, y: -300.00006}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchoredPosition: {x: 0, y: -300}
+  m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &396351831
 MonoBehaviour:
@@ -1956,7 +1971,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -600}
+  m_AnchoredPosition: {x: 0, y: -700}
   m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &773938240
@@ -2937,8 +2952,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -300.00006}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &978945235
 MonoBehaviour:
@@ -3070,7 +3085,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -200}
+  m_AnchoredPosition: {x: 0, y: -300}
   m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1040856040
@@ -3263,6 +3278,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c8095d8876482438e2e66cb5970396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ToWork1Name: 
+  ToWork1Salary: 0
+  ToWork1EnergyLoss: 0
+  ToWork1SatietyLoss: 0
+  ToWork1Duration: 0
+  ToWork2Name: 
+  ToWork2Salary: 0
+  ToWork2EnergyLoss: 0
+  ToWork2SatietyLoss: 0
+  ToWork2Duration: 0
+  ToWork3Name: 
+  ToWork3Salary: 0
+  ToWork3EnergyLoss: 0
+  ToWork3SatietyLoss: 0
+  ToWork3Duration: 0
 --- !u!1 &1161132461
 GameObject:
   m_ObjectHideFlags: 0
@@ -3380,7 +3410,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 50}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1225910605
@@ -3513,8 +3543,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350.00003, y: -300.00003}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchoredPosition: {x: 0, y: 300}
+  m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1346253911
 MonoBehaviour:
@@ -3703,6 +3733,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e39c2a4d509c654faf62da0d22ce245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ToEat1Name: "\u041F\u043E\u0435\u0441\u0442\u044C \u21161"
+  ToEat1Cost: 100
+  ToEat1Satiety: 40
+  ToEat1Duration: 20
+  ToEat2Name: "\u041F\u043E\u0435\u0441\u0442\u044C \u21162"
+  ToEat2Cost: 500
+  ToEat2Satiety: 60
+  ToEat2Duration: 20
+  ToEat3Name: "\u041F\u043E\u0435\u0441\u0442\u044C \u21163"
+  ToEat3Cost: 2000
+  ToEat3Satiety: 100
+  ToEat3Duration: 20
 --- !u!1 &1396490281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3793,7 +3835,6 @@ GameObject:
   - component: {fileID: 1430756491}
   - component: {fileID: 1430756494}
   - component: {fileID: 1430756493}
-  - component: {fileID: 1430756492}
   - component: {fileID: 1430756495}
   m_Layer: 5
   m_Name: Shop Panel
@@ -3826,18 +3867,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1430756492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1430756490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e39c2a4d509c654faf62da0d22ce245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1430756493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3888,6 +3917,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ef9b269cf38fe542a8fbe3a343b09b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Product1Name: "\u0422\u043E\u0432\u0430\u0440 \u21161"
+  Product1Cost: 10000
+  Product2Name: "\u0422\u043E\u0432\u0430\u0440 \u21162"
+  Product2Cost: 35000
+  Product3Name: "\u0422\u043E\u0432\u0430\u0440 \u21163"
+  Product3Cost: 200000
+  Product4Name: "\u0422\u043E\u0432\u0430\u0440 \u21164"
+  Product4Cost: 500000
 --- !u!1 &1445497885
 GameObject:
   m_ObjectHideFlags: 0
@@ -3980,6 +4017,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b35b788fc101b4fb15d77a529b1b3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ToStudy1Name: "\u0423\u0447\u0438\u0442\u044C\u0441\u044F \u21161"
+  ToStudy1Achievements: 10
+  ToStudy1EnergyLoss: 10
+  ToStudy1SatietyLoss: 10
+  ToStudy1Duration: 1.5
+  ToStudy2Name: "\u0423\u0447\u0438\u0442\u044C\u0441\u044F \u21162"
+  ToStudy2Achievements: 20
+  ToStudy2EnergyLoss: 20
+  ToStudy2SatietyLoss: 20
+  ToStudy2Duration: 3
+  ToStudy3Name: "\u0423\u0447\u0438\u0442\u044C\u0441\u044F \u21163"
+  ToStudy3Achievements: 50
+  ToStudy3EnergyLoss: 90
+  ToStudy3SatietyLoss: 90
+  ToStudy3Duration: 12
 --- !u!1 &1469401896
 GameObject:
   m_ObjectHideFlags: 0
@@ -4050,7 +4102,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0420\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u21161  $100/4\u0447"
+  m_Text: "\u0420\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u21161"
 --- !u!222 &1469401899
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4729,8 +4781,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 713.1, y: 425}
+  m_AnchoredPosition: {x: 0, y: 540}
+  m_SizeDelta: {x: 700, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1959537906
 MonoBehaviour:

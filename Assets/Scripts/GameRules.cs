@@ -1,26 +1,26 @@
-using System;
+Ôªøusing System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameRules : MonoBehaviour
 {
-    public static bool RulesObserved(int tirednessLoss, int satietyLoss)
+    public static bool RulesObserved(int energyLoss, int satietyLoss)
     { 
-        if ((Convert.ToInt32(GameObject.Find("Tiredness").GetComponent<Text>().text) - tirednessLoss < 0) 
+        if ((Convert.ToInt32(GameObject.Find("Tiredness").GetComponent<Text>().text) - energyLoss < 0) 
             | (Convert.ToInt32(GameObject.Find("Satiety").GetComponent<Text>().text) - satietyLoss < 0))
             return false;
         else return true;
     }
     public static bool NoDebt(int withdrawal)
     {
-        if (Convert.ToInt32(GameObject.Find("Money").GetComponent<Text>().text.TrimStart('$')) - withdrawal < 0)
+        if (Convert.ToInt32(GameObject.Find("Money").GetComponent<Text>().text.TrimEnd('‚ÇΩ')) - withdrawal < 0)
             return false;
         else return true;
     }
     public static bool OnceTouched(GameObject gameObject)
     {
-        if (gameObject.GetComponentInChildren<Text>().text == " ÛÔÎÂÌÓ") return false;
+        if (gameObject.GetComponentInChildren<Text>().text == "–ö—É–ø–ª–µ–Ω–æ") return false;
         else return true;
     }
     public static void EndOfGame()
