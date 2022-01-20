@@ -7,8 +7,8 @@ public class GameRules : MonoBehaviour
 {
     public static bool RulesObserved(int energyLoss, int satietyLoss)
     { 
-        if ((Convert.ToInt32(GameObject.Find("Tiredness").GetComponent<Text>().text) - energyLoss < 0) 
-            | (Convert.ToInt32(GameObject.Find("Satiety").GetComponent<Text>().text) - satietyLoss < 0))
+        if ((Convert.ToInt32(GameObject.Find("Tiredness").transform.Find("Points").GetComponent<Text>().text) - energyLoss < 0) 
+            | (Convert.ToInt32(GameObject.Find("Satiety").transform.Find("Points").GetComponent<Text>().text) - satietyLoss < 0))
             return false;
         else return true;
     }
